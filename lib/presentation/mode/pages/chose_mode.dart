@@ -36,24 +36,35 @@ class ChoseModePage extends StatelessWidget {
                 ),
                 const Spacer(),
                 const Text(
-                  'Enjoy Listening Music',
+                  'Choose Mode',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                     fontSize: 25,
                   ),
                 ),
-                const SizedBox(height: 21),
-                const Text(
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis enim purus sed phasellus. Cursus ornare id scelerisque aliquam.',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                    color: AppColors.grey,
-                    fontSize: 18,
-                  ),
-                  textAlign: TextAlign.center,
+                const SizedBox(height: 32),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 50,
+                      width: 50,
+                      decoration: const BoxDecoration(
+                          color: Colors.white, shape: BoxShape.circle),
+                    ),
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    Container(
+                      height: 50,
+                      width: 50,
+                      decoration: const BoxDecoration(
+                          color: Colors.white, shape: BoxShape.circle),
+                    ),
+                  ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 50),
                 BasicAppButton(
                   onPressed: () {
                     Navigator.push(
@@ -64,7 +75,7 @@ class ChoseModePage extends StatelessWidget {
                       ),
                     );
                   },
-                  title: 'Get Started',
+                  title: 'Continue',
                 ),
               ],
             ),
